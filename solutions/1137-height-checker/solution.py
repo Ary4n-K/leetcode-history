@@ -1,8 +1,10 @@
 class Solution:
     def heightChecker(self, heights: List[int]) -> int:
-        l=sorted(heights)
+        expected = sorted(heights)
         c=0
-        for i in range(len(l)):
-            if l[i] != heights[i]:
+        print(expected)
+        l = len(heights)
+        for i in range(l):
+            if expected[i] != heights[i] :
                 c+=1
-        return c            
+        return c        
